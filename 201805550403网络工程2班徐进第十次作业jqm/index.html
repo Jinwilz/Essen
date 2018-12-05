@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<!-- meta使用viewport以确保页面可自由缩放 -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- 引入 jQuery Mobile 样式 -->
+		<link rel="stylesheet" href="http://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
+		<!-- 引入 jQuery 库 -->
+		<script src="http://apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+
+		<!-- 引入 jQuery Mobile 库 -->
+		<script src="http://apps.bdimg.com/libs/jquerymobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+		<style>
+			body {
+				margin: 0 auto;
+			}
+			
+			a {
+				list-style: none;
+				text-underline: none;
+				text-decoration: none;
+				list-style-type: none;
+				color: white;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div data-role="page" id="pageone">
+			<div data-role="header">
+				<a href="#pageone" class="ui-btn ui-icon-arrow-l ui-btn-icon-left">back</a>
+				<h1>挂科难</h1>
+				<a href="#pageone" class="ui-btn ui-icon-home ui-btn-icon-left">Home</a>
+			</div>
+			<div data-role="main">
+				<div style="margin-top: 15px;border-bottom: 2px solid gray;">今日防挂题</div>
+				<img src="img/1.jpg" width="100%" style="margin-top: 10px;"></div>
+			<a href="#pagetwo" class="ui-btn">点击开始挑战</a>
+		</div>
+		<div data-role="page" data-dialog="true" id="pagetwo">
+			<div data-role="header">
+				<h1>今日防挂题</h1>
+			</div>
+
+			<div data-role="main" class="ui-content">
+				<p>对不起，我们遇到了一些错误，导致进入今日防挂题挑战失败，请关闭页面后重试，如仍旧失败请致电10086选择人工服务。</p>
+				<br />
+				<a href="#pagethree">了解挂科难</a>
+				<br />
+				<br>
+				<a href="#pageone">回到主界面</a><br>
+			</div>
+
+			<div data-role="footer">
+				<h1>404 Not Found</h1>
+			</div>
+		</div>
+		<div data-role="page" id="pagethree">
+			<div data-role="header">
+				<a href="#pagetwo" class="ui-btn ui-icon-arrow-l ui-btn-icon-left">back</a>
+				<h1>挂科难</h1>
+				<a href="#pageone" class="ui-btn ui-icon-home ui-btn-icon-left">Home</a>
+			</div>
+			<div data-role="main">
+				<img src="images/1.jpg" width="100%" />
+				<div data-role="collapsible" data-collapsed="true">
+					<h1>科目广泛</h1>
+					<p>囊括大学所有专业所有冷热门课程，保证需要时有求必应。</p>
+				</div>
+				<div data-role="collapsible" data-collapsed="true">
+					<h1>社交平台</h1>
+					<p>挂科难是一个开放型社区，好友用户之间可以直接发送讯息，并可自由在动态圈里发表自己的感受，也可以分享考试学习经验并设置付费，造就知识变现。</p>
+				</div>
+				<div data-role="collapsible" data-collapsed="true">
+					<h1>效果明显</h1>
+					<p>针对期末零基础学习，整合合理的学习方案，在最短的时间里达到最大的学习效果。用过的同学都说好。</p>
+				</div>
+			</div>
+			<div data-role="footer">
+				<h1>期末冲刺，拒绝挂科</h1>
+			</div>
+		</div>
+	</body>
+
+</html>
